@@ -1,0 +1,99 @@
+.gallery-page {
+  padding: 2rem;
+  text-align: center;
+
+  .search-bar {
+    margin-bottom: 2rem;
+
+    input {
+      width: 100%;
+      max-width: 600px;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #01579B;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #013A63;
+      }
+    }
+  }
+
+  .artworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 1.5rem;
+    justify-items: center;
+  }
+
+  .art-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .art-thumbnail {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .art-info {
+      padding: 1rem;
+
+      h3 {
+        font-size: 1.25rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 2rem;
+
+    button {
+      background-color: #01579B;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 0.25rem;
+
+      &:hover {
+        background-color: #013A63;
+      }
+
+      &:disabled {
+        background-color: #ddd;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

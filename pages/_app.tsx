@@ -1,13 +1,12 @@
-import '../styles/global.scss';
-import { AppProps } from 'next/app';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { CartProvider } from '../contexts/cartContext';
+import '../styles/globals.scss'; 
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <>
-    <Component {...pageProps} />
-    <ToastContainer />
-  </>
-);
+function MyApp({ Component, pageProps }) {
+  return (
+    <CartProvider>
+      <Component {...pageProps} />
+    </CartProvider>
+  );
+}
 
 export default MyApp;

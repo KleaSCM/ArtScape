@@ -1,11 +1,37 @@
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  background-color: #f5f5f5;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E1; /* Sandy White background */
+    color: #6D4C41; /* Earthy Brown text */
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Bree Serif', serif;
+    color: #D84315; /* Ochre Red */
+  }
+  
+  button {
+    background-color: #01579B;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  
+    &:hover {
+      background-color: #013A63;
+    }
+  }
+  
+  input, textarea {
+    border: 2px solid #6D4C41;
+    padding: 0.75rem;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #FFF8E1;
+  }
+  

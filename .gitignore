@@ -1,0 +1,66 @@
+# Node.js dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# Next.js specific
+/.next/
+/out/
+
+# production build
+/build
+
+# misc system files
+.DS_Store
+*.pem
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# Vercel deployment files
+.vercel
+
+# TypeScript related
+*.tsbuildinfo
+next-env.d.ts
+
+# Go related files
+/go/bin/
+*.exe        # Windows binaries
+*.out        # Unix/Linux binaries
+*.test       # Test binaries
+*.mod        # Go module files (dependencies are managed automatically)
+/vendor/     # Vendored dependencies
+/go.sum      # Dependency checksums
+
+# IDE / Editor config files
+.vscode/
+.idea/
+*.swp
+*.sublime-workspace
+*.sublime-project
+
+# Coverage reports
+*.coverprofile
+coverage.out
+
+# Compiled object files
+*.o
+*.a
+*.so
+
+# Go build files
+/go/pkg/
+go.work
+
+# Other Go tools
+/gocache/
